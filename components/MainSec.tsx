@@ -1,9 +1,13 @@
 import React from 'react'
+import womens from '../public/womens.gif'
+import Image from 'next/image'
+import mediaImage from '../public/meditating.png'
+import Link from 'next/link'
 
 const MainSec = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:pt-8 padding-container items-start pt-4 xl:px-28'>
-        <div className='flex flex-col gap-6'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:pt-1 padding-container pt-1 xl:px-28'>
+        <div className='flex flex-col gap-7 pt-12'>
             <h1 className='montserrat-700 text-[38px] leading-[45px]'>Collaborate <br /> across the world</h1>
             <p className='opensans-font-regular text-black'>A selective platform to connect great tallents <br /> around the globe, build yours now</p>
             <div className='flex gap-1'>
@@ -18,9 +22,46 @@ const MainSec = () => {
                         Our plans
                 </button>
             </div>
+            <div className=' bg-[#FFD7C2] w-full h-auto mt-12 flex flex-col lg:flex-row py-4 items-center justify-center button-style relative'>
+                <div className='layer-button'></div>
+                <Image src={mediaImage} alt='media'
+                width={300}
+                height={300}
+                className='w-[200px] h-[200px]'
+                />
+                <div className='flex flex-col gap-5 items-start justify-center'>
+                    <h2 className='montserrat-700'>Community Insights</h2>
+                    <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
+                    <Link href='/' className='montserrat-700 underline'>
+                    Check the connectivity
+                    </Link>
+                </div>
+            </div>
 
         </div>
-        <div>sec</div>
+        <div className='flex flex-col pt-2'>
+            <Image src={womens} alt='women'
+            width={600}
+            height={600}
+            className='w-full h-[350px]'
+            />
+            <div className='bg-[#FFF501] w-full h-auto flex flex-col lg:flex-row py-4 items-center justify-center button-style relative'>
+                <div className='absolute w-full h-full bg-[black] z-[-1] rounded-[5px] left-[3px] top-0.5'></div>
+                <Image src={mediaImage} alt='media'
+                width={300}
+                height={300}
+                className='w-[200px] h-[200px]'
+                />
+                <div className='flex flex-col gap-5 items-start justify-center'>
+                    <h2 className='montserrat-700'>Community Insights</h2>
+                    <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
+                    <Link href='/' className='montserrat-700 underline'>
+                    Check the connectivity
+                    </Link>
+                </div>
+            </div>
+            
+        </div>
     </div>
   )
 }

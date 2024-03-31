@@ -21,7 +21,7 @@ const Navbar = () => {
             </Link>
             ))}
             <button
-        className='hidden lg:flex bg-[#CDEC2E] text-black  px-6 opensans-font-regular text-[14px] py-[2px] button-style relative'>
+        className='hidden lg:flex bg-[#FFF501] text-black  px-6 opensans-font-regular text-[14px] py-[2px] button-style relative'>
             <div className='layer-button'></div>
             Login
         </button>
