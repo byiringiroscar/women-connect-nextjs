@@ -29,9 +29,9 @@ const MainSec = () => {
                 <Image src={mediaImage} alt='media'
                 width={300}
                 height={300}
-                className='w-[200px] h-[200px]'
+                className='w-[200px] h-[200px] hidden lg:block'
                 />
-                <div className='flex flex-col gap-5 items-start justify-center'>
+                <div className='flex flex-col gap-5 items-start justify-center p-4'>
                     <h2 className='montserrat-700'>Community Insights</h2>
                     <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
                     <Link href='/' className='montserrat-700 underline'>
@@ -45,16 +45,16 @@ const MainSec = () => {
             <Image src={womens} alt='women'
             width={600}
             height={600}
-            className='w-full h-[350px]'
+            className='w-full h-[350px] hidden lg:block'
             />
             <div className='bg-[#FFF501] w-full h-auto flex flex-col lg:flex-row py-4 items-center justify-center button-style relative'>
                 <div className='absolute w-full h-full bg-[black] z-[-1] rounded-[5px] left-[3px] top-0.5'></div>
                 <Image src={diplomasvg} alt='media'
                 width={300}
                 height={300}
-                className='w-[200px] h-[200px]'
+                className='w-[200px] h-[200px] hidden lg:block'
                 />
-                <div className='flex flex-col gap-5 items-start justify-center'>
+                <div className='flex flex-col gap-5 items-start justify-center p-4'>
                     <h2 className='montserrat-700'>Free live support</h2>
                     <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
                     <Link href='/' className='montserrat-700 underline'>
