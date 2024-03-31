@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const About = () => {
   return (
-    <div className='padding-container py-12 xl:px-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-12'>
+    <div className='padding-container pt-12 xl:px-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-12'>
         <div className='flex flex-col gap-4'>
             <h1 className='montserrat-700 text-[38px] leading-[45px]'>Mix & Match.</h1>
             <p className='montserrat-400 text-black'>The library works like building blocks made of vector arms, legs, and emotions. You can mix these elements to create different Peeps.</p>
