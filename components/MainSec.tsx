@@ -34,7 +34,7 @@ const MainSec = () => {
                 <div className='flex flex-col gap-5 items-start justify-center p-4'>
                     <h2 className='montserrat-700'>Community Insights</h2>
                     <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
-                    <Link href='/' className='montserrat-700 underline'>
+                    <Link href='/' className='montserrat-700 underline hover:text-[#9b9844] transition-colors duration-200 ease-in-out'>
                     Check the connectivity
                     </Link>
                 </div>
@@ -57,7 +57,7 @@ const MainSec = () => {
                 <div className='flex flex-col gap-5 items-start justify-center p-4'>
                     <h2 className='montserrat-700'>Free live support</h2>
                     <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
-                    <Link href='/' className='montserrat-700 underline'>
+                    <Link href='/' className='montserrat-700 underline hover:text-[#9b9844] transition-colors duration-200 ease-in-out'>
                     Compare plans
                     </Link>
                 </div>
