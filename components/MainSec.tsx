@@ -12,7 +12,7 @@ const MainSec = () => {
         <div className='flex flex-col gap-7 pt-12'>
             <h1 className='montserrat-700 text-[38px] leading-[45px]'>Collaborate <br /> across the world</h1>
             <p className='opensans-font-regular text-black'>A selective platform to connect great tallents <br /> around the globe, build yours now</p>
-            <div className='flex gap-1'>
+            <div className='flex gap-3'>
                 <button
                     className='lg:flex bg-white text-black  px-6 opensans-font-regular text-[14px] py-2 button-style relative'>
                         <div className='layer-button'></div>
@@ -45,7 +45,7 @@ const MainSec = () => {
             <Image src={womens} alt='women'
             width={600}
             height={600}
-            className='w-full h-[350px] hidden lg:block'
+            className='w-full h-[350px] hidden sm:block'
             />
             <div className='bg-[#FFF501] w-full h-auto flex flex-col lg:flex-row py-4 items-center justify-center button-style relative'>
                 <div className='absolute w-full h-full bg-[black] z-[-1] rounded-[5px] left-[3px] top-0.5'></div>
