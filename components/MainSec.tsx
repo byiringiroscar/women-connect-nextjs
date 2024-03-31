@@ -2,7 +2,9 @@ import React from 'react'
 import womens from '../public/womens.gif'
 import Image from 'next/image'
 import mediaImage from '../public/meditating.png'
+import diplomasvg from '../public/diploma.svg'
 import Link from 'next/link'
+
 
 const MainSec = () => {
   return (
@@ -47,16 +49,16 @@ const MainSec = () => {
             />
             <div className='bg-[#FFF501] w-full h-auto flex flex-col lg:flex-row py-4 items-center justify-center button-style relative'>
                 <div className='absolute w-full h-full bg-[black] z-[-1] rounded-[5px] left-[3px] top-0.5'></div>
-                <Image src={mediaImage} alt='media'
+                <Image src={diplomasvg} alt='media'
                 width={300}
                 height={300}
                 className='w-[200px] h-[200px]'
                 />
                 <div className='flex flex-col gap-5 items-start justify-center'>
-                    <h2 className='montserrat-700'>Community Insights</h2>
+                    <h2 className='montserrat-700'>Free live support</h2>
                     <p className='montserrat-400 leading-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis error minima reiciendis.</p>
                     <Link href='/' className='montserrat-700 underline'>
-                    Check the connectivity
+                    Compare plans
                     </Link>
                 </div>
             </div>
