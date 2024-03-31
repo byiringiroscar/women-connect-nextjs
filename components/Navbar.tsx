@@ -15,7 +15,7 @@ const Navbar = () => {
                 <Link
                 href={link.href}
                 key={link.key}
-                className='montserrat-400 text-black'
+                className='montserrat-400 text-black hover:text-[#9b9844] transition-colors duration-200 ease-in-out'
             >
                 {link.label}
             </Link>
