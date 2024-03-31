@@ -3,6 +3,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import mediation from '../public/woman1.png'
 import Image from 'next/image'
+import { TEAM_MEMBERS } from '@/constants'
+import Member from './Member';
 
 function Responsive() {
   const responsive = {
@@ -25,10 +27,7 @@ function Responsive() {
   return (
     <div className='w-full'>
       <Carousel responsive={responsive} >
-        <div className='flex flex-col w-full items-center'>
-          <Image src={mediation} alt='meditation' width={300} height={300} className='h-[250px] w-auto' />
-          <p className='satisfy-regular font-bold text-[20px]'>Priska</p>
-        </div>
+        {TEAM_MEMBERS.map((member, index) => <Member key={index} name={member.name} image={member.image} />)}
       </Carousel>
     </div>
   )
