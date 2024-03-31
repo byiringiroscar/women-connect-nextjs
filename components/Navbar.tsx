@@ -1,9 +1,26 @@
-import React from 'react'
+'use client'
+import { useState, useEffect } from 'react'
 import { FaShieldHeart } from "react-icons/fa6";
 import Link from "next/link";
 import { NAV_LINKS } from '@/constants'
+import { FiAlignJustify } from "react-icons/fi";
+import MobileNav from './MobileNav'
 
 const Navbar = () => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+    const handleToggleMobileNav = () => {
+        setIsMobileNavOpen(!isMobileNavOpen);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+        if (window.innerWidth > 1024) {
+            setIsMobileNavOpen(false);
+        }
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [])
   return (
     <nav className='flex justify-between padding-container items-center py-6 z-50 xl:px-28'>
         <Link href="/" className='flex gap-1 items-center'>
@@ -26,6 +43,10 @@ const Navbar = () => {
             Login
         </button>
         </ul>
+        <div className='lg:hidden'>
+          <FiAlignJustify onClick={handleToggleMobileNav} className='text-3xl text-black cursor-pointer' />
+        </div>
+        <MobileNav isMobileNavOpen={isMobileNavOpen} onToggleNav={handleToggleMobileNav} />
         
     </nav>
   )
