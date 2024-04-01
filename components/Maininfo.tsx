@@ -16,11 +16,11 @@ const Maininfo = () => {
             </Link>
 
         </div>
-        <div className='w-full h-full bg-white'>
+        <div className='w-full h-full bg-white hidden sm:block'>
             <Image src='https://assets-global.website-files.com/5e51b3b0337309d672efd94c/5e53699f33d3683a073e83a2_slider-2.svg' alt='media'
             width={500}
             height={500}
-            className='w-full h-full hidden lg:block'
+            className='w-full h-full'
             />
         </div>
     </div>
