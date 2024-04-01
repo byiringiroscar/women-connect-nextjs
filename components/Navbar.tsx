@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className='flex justify-between padding-container items-center py-6 z-50 xl:px-28'>
         <Link href="/" className='flex gap-1 items-center'>
           <FaShieldHeart className='p-1 bg-yellow-500 rounded-sm'  />
-          <span className='montserrat-700 font-bold'>Connect teams</span> 
+          <span className='montserrat-700 font-bold'>Womenconnect</span> 
         </Link>
         <ul className='hidden h-full gap-4 lg:flex'>
             {NAV_LINKS.map((link) => (
